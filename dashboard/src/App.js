@@ -31,10 +31,14 @@ const App = () => {
 							Sidebar
 						</div>
 					) : (
-						<div>
-							Sidebar w-0
+						<div className="w-0 dark:bg-secondary-dark-bg">
+							Sidebar
 						</div>
 					)}
+					<div className={
+						activeMenu ? 'dark:bg-main-bg bg-main-bg min-h-screen mg:ml-72 w-full'
+							: 'dark:bg-main-bg bg-main-bg min-h-screen w-full flex'
+					}></div>
 				</div>
 			</BrowserRouter>
 		</div>
