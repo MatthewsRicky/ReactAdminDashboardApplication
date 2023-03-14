@@ -36,12 +36,11 @@ const App = () => {
 						</div>
 					)}
 					<div className={
-						activeMenu ? 'dark:bg-main-bg bg-main-bg min-h-screen mg:ml-72 w-full'
-							: 'dark:bg-main-bg bg-main-bg min-h-screen w-full flex'
+						`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex'}`
 					}></div>
 				</div>
-			</BrowserRouter>
-		</div>
+			</BrowserRouter >
+		</div >
 	);
 };
 
