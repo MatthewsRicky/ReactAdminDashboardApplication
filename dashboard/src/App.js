@@ -22,6 +22,9 @@ import {
 	ColorMapping,
 	Editor,
 } from "./pages";
+
+import { useStateProvider } from "./contexts/ContextProvider";
+
 import "./App.css";
 
 const App = () => {
