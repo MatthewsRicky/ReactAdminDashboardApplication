@@ -7,6 +7,8 @@ import  { MdKeyboardArrowDown } from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import avatar from '../data/avatar.jpg'
+import { Chat, Cart, Notifications, userProfile } from '.'
+import { useStateContext } from '../contexts/ContextProvider'
 
 const Navbar = () => {
   return (
