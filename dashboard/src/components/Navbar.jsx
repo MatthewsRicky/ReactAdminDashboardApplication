@@ -36,7 +36,17 @@ const Navbar = () => {
         title="Menu" 
         customFunc ={() => setActiveMenu((prevActiveMenu)=>!prevActiveMenu)} 
         color="blue" 
-        icon={ AiOutlineMenu}/>
+        icon={ <AiOutlineMenu />}
+      />
+        <div className="flex">
+          <NavButton 
+            title="Cart" 
+            customFunc ={() => setActiveMenu((prevActiveMenu)=>!prevActiveMenu)} 
+            color="blue" 
+            icon={ <FiShoppingCart />}
+          
+          />
+        </div>
     </div>
   )
 }
