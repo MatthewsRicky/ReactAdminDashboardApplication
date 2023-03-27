@@ -23,12 +23,12 @@ import {
 	Editor,
 } from "./pages";
 
-import { useStateProvider } from "./contexts/ContextProvider";
+import { useStateContext } from "./contexts/ContextProvider";
 
 import "./App.css";
 
 const App = () => {
-	const activeMenu = true;
+	const {activeMenu} = useStateContext();
 	return (
 		<div>
 			<BrowserRouter>
