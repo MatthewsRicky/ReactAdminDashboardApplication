@@ -10,9 +10,14 @@ import avatar from '../data/avatar.jpg'
 import { Chat, Cart, Notifications, userProfile } from '.'
 import { useStateContext } from '../contexts/ContextProvider'
 
+const NavButton = ({ title, customFunc, icon, color, dotCcolor})
+
 const Navbar = () => {
+  const { activeMenu, setActiveMenu } = useStateContext()
   return (
-    <div>Navbar</div>
+    <div className='flex justify-between p-2 md:mx-6 relative'>
+
+    </div>
   )
 }
 
