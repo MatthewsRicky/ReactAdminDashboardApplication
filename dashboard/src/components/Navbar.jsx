@@ -76,7 +76,10 @@ const Navbar = () => {
               className="rounded-full w-8 h-8"
               src={avatar} alt = 'propic'
               />
-              <p></p>
+              <p>
+                <span className='text-gray-400 text-14'>Hi,</span> {' '}
+                <span className='text-gray-400 font-bold ml-1 text-14'>Micheal</span>
+              </p>
             </div>
            </TooltipComponent>
         
