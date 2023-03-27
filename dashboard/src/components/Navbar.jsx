@@ -41,11 +41,33 @@ const Navbar = () => {
         <div className="flex">
           <NavButton 
             title="Cart" 
-            customFunc ={() => setActiveMenu((prevActiveMenu)=>!prevActiveMenu)} 
+            customFunc ={() => handleClick('cart')} 
             color="blue" 
             icon={ <FiShoppingCart />}
           
           />
+        
+      
+          <NavButton 
+            title="Chat"
+            dotColor="#03c9d7" 
+            customFunc ={() => handleClick('chat')} 
+            color="blue" 
+            icon={ <BsChatLeft />}
+          
+          />
+          <NavButton 
+            title="Notifications"
+            dotColor="#03c9d7" 
+            customFunc ={() => handleClick('notification')} 
+            color="blue" 
+            icon={ <RiNotification3Line />}
+          
+          />
+
+        
+       
+
         </div>
     </div>
   )
