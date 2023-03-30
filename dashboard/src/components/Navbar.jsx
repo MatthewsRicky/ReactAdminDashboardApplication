@@ -29,7 +29,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor}) => (
 )
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu } = useStateContext()
+  const { activeMenu, setActiveMenu, isClicked, setIsClicked } = useStateContext()
   return (
     <div className='flex justify-between p-2 md:mx-6 relative'>
       <NavButton 
@@ -86,7 +86,10 @@ const Navbar = () => {
             </div>
            </TooltipComponent>
         
-       
+            {isClicked.cart && <Cart />}
+            {isClicked.chat && <Chat />}
+            {isClicked.notification && <Notifications />}
+            {isClicked.userProfile && <userProfile />}
 
         </div>
     </div>
