@@ -22,7 +22,8 @@ export const ContextProvider = ({ children }) => {
       activeMenu,
 	  setActiveMenu,
 	  isClicked,
-	  setIsClicked    
+	  setIsClicked,
+	  handleClick
     
 	}}>
 			{children}
