@@ -143,8 +143,8 @@ const App = () => {
 								element={<Stacked />}
 							/>
 						</Routes>
-						</div>
 					</div>
+				</div>
 				</div>
 			</BrowserRouter>
 		</div>
