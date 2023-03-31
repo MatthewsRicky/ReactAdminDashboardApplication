@@ -16,8 +16,7 @@ const Ecommerce = () => {
               <p className='text-2xl'>$65,448.78k</p>
             </div>
           </div>
-        </div>
-        <div className="mt-6">
+          <div className="mt-6">
           <Button 
             color='white'
             bgColor='blue'
@@ -26,6 +25,30 @@ const Ecommerce = () => {
             size='md'
           />
         </div>
+        </div>
+       <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
+        {earningData.map((item) => {
+          return(
+          <div
+            key={item.title}
+            className='bg-white dark:text-grray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl'
+          >
+            <button
+              type='button'
+              style={{ color: item.iconColor, 
+              backgroundColor: item.iconBg}}
+              className='text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl'>
+                {item.icon}
+              </button>
+              <p className="mt-3">
+                <span className="text-lg f-nt-semibold">
+                  {item.amount}
+                </span>
+                
+              </p>
+          </div>
+          )})}
+       </div>
       </div>
     </div>
   )
