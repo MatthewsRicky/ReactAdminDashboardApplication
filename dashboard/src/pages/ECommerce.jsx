@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
-import { GoPimitiveDot} from 'react-icons/go'
+import { GoPrimitiveDot} from 'react-icons/go'
 import { Stacked, Pie, Button, SparkLine } from "../components"
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 import { useStateContext } from '../contexts/ContextProvider'
@@ -61,6 +61,13 @@ const Ecommerce = () => {
             <p className='font-semibold text-xl'>
               Revenue Updates
             </p>
+            <div className="flex items-center gap-4">
+              <p>
+                <span>
+                  <GoPrimitiveDot />
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
