@@ -7,7 +7,7 @@ import  { MdKeyboardArrowDown } from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import avatar from '../data/avatar.jpg'
-import { Chat, Cart, Notifications, userProfile } from '.'
+import { Chat, Cart, Notification, userProfile } from '.'
 import { useStateContext } from '../contexts/ContextProvider'
 
 const NavButton = ({ title, customFunc, icon, color, dotColor}) => (
@@ -57,7 +57,7 @@ const Navbar = () => {
           
           />
           <NavButton 
-            title="Notifications"
+            title="Notification"
             dotColor="#03c9d7" 
             customFunc ={() => handleClick('notification')} 
             color="blue" 
@@ -88,7 +88,7 @@ const Navbar = () => {
         
             {isClicked.cart && <Cart />}
             {isClicked.chat && <Chat />}
-            {isClicked.notification && <Notifications />}
+            {isClicked.notification && <Notification />}
             {isClicked.userProfile && <userProfile />}
 
         </div>
