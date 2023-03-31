@@ -44,11 +44,25 @@ const Ecommerce = () => {
                 <span className="text-lg f-nt-semibold">
                   {item.amount}
                 </span>
-                
+                <span className={`text-sm text-${item.pcColor}`}>
+                  {item.percentage}
+                </span>
+                <p className='text-sm text-gray-400 mt-1'>
+                  {item.title}
+                </p>
               </p>
           </div>
           )})}
        </div>
+      </div>
+      <div className="flex gap-10 flex-wrap justify-center">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 rounded-2xl md:w-780">
+          <div className="flex justify-between">
+            <p className='font-semibold text-xl'>
+              Revenue Updates
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
