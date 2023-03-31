@@ -1,5 +1,8 @@
 {
     "prettier.arrowParens": "avoid",
     "prettier.endOfLine": "auto",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "prettier.singleAttributePerLine": true,
+    "prettier.quoteProps": "consistent",
+    "prettier.proseWrap": "always"
 }
