@@ -7,11 +7,12 @@ const Stacked = ({ width, height }) => {
     <ChartComponent 
       width={width}
       height={height}
-      id='stack chart'
-      //primaryXAXIS={stackedPrimaryXAxis}
-      //primaryYAXIS={stackedPrimaryYAxis}
+      id="charts"
+      primaryXAXIS={stackedPrimaryXAxis}
+      primaryYAXIS={stackedPrimaryYAxis}
       chartArea={{ border: { width : 0}}}
       tooltip={{ enable: true }}
+      legendSettings={{ backgrgound: 'white'}}
     >
       <Inject services={[Legend, Category, StackingColumnSeries, Tooltip]} />
       <SeriesCollectionDirective>
