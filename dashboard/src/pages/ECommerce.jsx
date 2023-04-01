@@ -99,7 +99,7 @@ const Ecommerce = () => {
                     </p>
                     <p className="text-gray-500 mt-1">Expense</p>
                   </div>
-                  <div className="mt-5">
+                  <div className="mt-5 bg-yellow-400">
                     <SparkLine 
                       currentColor="blue"
                       id="line-sparkline"
@@ -119,11 +119,12 @@ const Ecommerce = () => {
                     />
                   </div>
               </div>
-              <div>
+              
+            </div> 
+            <div>
                 <Stacked width="320px"
                  height="360px" />
-              </div>
-            </div>  
+              </div> 
           </div>
         </div>
       </div>
