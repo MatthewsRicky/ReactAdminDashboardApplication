@@ -6,7 +6,24 @@ import { Header } from '../components'
 
 const Customers = () => {
   return (
-    <div>Customers</div>
+    <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl'>
+      <Header category="Page" title="Customers" />
+      <GridComponent 
+      id='gridcomp'
+      dataSource={customersData}
+      allowPaging
+      allowSorting
+      toolbar={['Search']}
+      width="auto"
+      >
+        <ColumnsDirective>
+          {customersGrid.map((item, index) => (
+            <ColumnDirective key={index} {...item} />
+          ))}
+        </ColumnsDirective>
+        <Inject services={[Page, Toolbar]} />
+      </GridComponent>
+    </div>
   )
 }
 
