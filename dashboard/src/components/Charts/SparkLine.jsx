@@ -22,7 +22,7 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor}) => {
           visible: true
         }
       }}>
-      <Inject services={[SparklineTooltip]} />
+      <Inject services= {[SparklineTooltip]} />
     </SparklineComponent>
   )
 }
