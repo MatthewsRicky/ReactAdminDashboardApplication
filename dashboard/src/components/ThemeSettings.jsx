@@ -9,7 +9,13 @@ import  { useStateContext } from '../contexts'
 
 const ThemeSettings = () => {
   return (
-    <div>ThemeSettings</div>
+    <div className='bg-half-transparent w-screen fixed nav-item top-0 right-9'>
+      <div className="float-right h-screen dark:text-gray-200 bg-whihte dark:[#484B52] w-400">
+        <div className="flex justify-between items-center p-4 ml-4">
+          <p className="font-semibold text-lg">Settings</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
