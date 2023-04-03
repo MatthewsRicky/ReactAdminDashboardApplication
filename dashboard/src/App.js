@@ -66,6 +66,10 @@ const App = () => {
 					
 
 					<div>
+
+						<ThemeSettings />
+
+
 						<Routes>
 							{/* Dashboard */}
 							<Route
