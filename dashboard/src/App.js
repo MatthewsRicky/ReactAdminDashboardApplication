@@ -93,7 +93,7 @@ const App = () => {
 
 							{/* Apps */}
 							<Route
-								path='/calender'
+								path='/calendar'
 								element={<Calendar />}
 							/>
 							<Route
