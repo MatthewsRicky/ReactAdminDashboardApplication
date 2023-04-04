@@ -57,6 +57,19 @@ const ThemeSettings = () => {
              </label>
           </div>
         </div>
+        <div className="flex-col border-t-1 border-color p-4 ml-4">
+          <p className="font-semibold text-lg">Theme Colors</p>
+          <div className="flex gap-3">
+            {themeColors.map((item, index) => (
+              <TooltipComponent key={index} 
+                content={item.name}
+                position='TopCenter'
+              >
+
+              </TooltipComponent>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
