@@ -34,7 +34,7 @@ const Navbar = () => {
     const handleResize = () => setScreenSize(window.innerWidth)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  }, [setScreenSize])
 
   useEffect(() => {
     if (screenSize <= 900){
@@ -49,7 +49,7 @@ const Navbar = () => {
       <NavButton 
         title="Menu" 
         customFunc ={() => setActiveMenu((prevActiveMenu)=>!prevActiveMenu)} 
-        color="blue" 
+        color={currentColor} 
         icon={ <AiOutlineMenu />}
       />
         <div className="flex">
