@@ -1,9 +1,9 @@
 import React from 'react'
-import { BarComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, BarSeries } from '@syncfusion/ej2-react-charts'
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, BarSeries } from '@syncfusion/ej2-react-charts'
 
 import { barCustomSeries, barPrimaryXAxis, barPrimaryYAxis } from '../../data/dummy'
 
-import { Header } from '../../components'
+import { ChartsHeader } from '../../components'
 
 import { useStateContext } from '../../contexts/ContextProvider'
 
@@ -12,9 +12,9 @@ const Bar = () => {
 
   return (
     <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl'>
-      <Header category='Chart' title='Inflation Rate in Percentage' />
-      <BarComponent
-        id='bar-chart'
+      <ChartsHeader category='Bar' title='Olympic Medal Counts' />
+      <ChartComponent
+        id='charts'
         height='420px'
         primaryXAxis={barPrimaryXAxis}
         primaryYAxis={barPrimaryYAxis}
@@ -28,7 +28,7 @@ const Bar = () => {
           <SeriesDirective key={index} {...item} />
           )}
         </SeriesCollectionDirective>
-      </BarComponent>
+      </ChartComponent>
     </div>
   )
 }
