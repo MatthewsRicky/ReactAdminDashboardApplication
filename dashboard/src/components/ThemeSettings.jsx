@@ -10,7 +10,7 @@ import { themeColors } from '../data/dummy'
 const ThemeSettings = () => {
   return (
     <div className='bg-half-transparent w-screen fixed nav-item top-0 right-9'>
-      <div className="float-right h-screen dark:text-gray-200 bg-whihte dark:[#484B52] w-400">
+      <div className="float-right h-screen dark:text-gray-200 bg-white dark:[#484B52] w-400">
         <div className="flex justify-between items-center p-4 ml-4">
           <p className="font-semibold text-xl">Settings</p>
           <button
@@ -66,7 +66,9 @@ const ThemeSettings = () => {
                 position='TopCenter'
               >
                 <div className="relative mt-2 cursor-pointer flex gagp-5 items-center">
-                  <button>
+                  <button type='button'
+                    className='h-10 w-10 rounded-full cursor-pointer'
+                  >
                     <BsCheck className={`ml-2 text-2xl text-white  ${true ? 'block' : 'hidden'}`} />
                   </button>
                 </div>
