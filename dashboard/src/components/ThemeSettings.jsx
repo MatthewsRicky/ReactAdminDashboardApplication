@@ -65,7 +65,11 @@ const ThemeSettings = () => {
                 content={item.name}
                 position='TopCenter'
               >
-
+                <div className="relative mt-2 cursor-pointer flex gagp-5 items-center">
+                  <button>
+                    <BsCheck className={`ml-2 text-2xl text-white  ${true ? 'block' : 'hidden'}`} />
+                  </button>
+                </div>
               </TooltipComponent>
             ))}
           </div>
