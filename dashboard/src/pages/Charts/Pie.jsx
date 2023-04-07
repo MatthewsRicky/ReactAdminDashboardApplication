@@ -1,7 +1,8 @@
 import React from 'react'
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DataLabel, Legend, Category, Tooltip, ColumnSeries } from '@syncfusion/ej2-react-charts'
+import { FiPieChart } from 'react-icons/fi'
 
-import { barCustomSeries, barPrimaryXAxis, barPrimaryYAxis } from '../../data/dummy'
+import { pieCustomSeries, piePrimaryXAxis, barPrimaryYAxis } from '../../data/dummy'
 
 import { pieChartData } from '../../data/dummy'
 import { Header,  Pie as PieChart } from '../../components'
@@ -16,6 +17,7 @@ const Pie = () =>  (
       height='420'
 
       >
+        <FiPieChart />
 
       </pie>
     </div>
