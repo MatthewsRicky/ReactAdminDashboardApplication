@@ -17,7 +17,7 @@ const Pie = () =>  (
       height='420'
 
       >
-        <FiPieChart />
+    
 
       </pie>
     </div>
