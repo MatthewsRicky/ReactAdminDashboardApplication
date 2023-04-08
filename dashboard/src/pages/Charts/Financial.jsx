@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Legend } 
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Legend, Inject } 
 from '@syncfusion/ej2-react-charts'
 import { Header } from '../../components'
 
@@ -12,6 +12,10 @@ const Financial = () => {
       <div className='w-full'>
         <ChartComponent 
           id='finance'
+          height='420px'
+          primaryXAxis={FinancialPrimaryXAxis}
+          primaryYAxis={FinancialPrimaryYAxis}
+          tooltip={{ enable : true }}
         />
       </div>
     </div>
