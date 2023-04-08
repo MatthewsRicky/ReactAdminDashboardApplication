@@ -1,9 +1,11 @@
 import React from 'react'
-import { ChartComponent } from '@syncfusion/ej2-react-charts'
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective } from '@syncfusion/ej2-react-charts'
 
 const Financial = () => {
   return (
-    <div>Financial</div>
+    <div className='w-full'>
+
+    </div>
   )
 }
 
