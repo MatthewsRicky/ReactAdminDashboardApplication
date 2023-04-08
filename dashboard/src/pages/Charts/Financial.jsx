@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective } 
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Legend } 
 from '@syncfusion/ej2-react-charts'
 import { Header } from '../../components'
 
@@ -7,10 +7,16 @@ import { financialChartData, FinancialPrimaryXAxis, FinancialPrimaryYAxis } from
 
 const Financial = () => {
   return (
-    <div className='w-full'>
-      <Header  />
+    <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl'>
+      <Header category='Chart' title='Financial Chart' />
+      <div className='w-full'>
+        <ChartComponent 
+          id='finance'
+        />
+      </div>
     </div>
   )
+
 }
 
 export default Financial
