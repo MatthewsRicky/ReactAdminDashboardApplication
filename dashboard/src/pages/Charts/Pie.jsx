@@ -12,7 +12,7 @@ const Pie = () =>  (
     <Header category='Pie' title='Project Cost Breakdown' />
     <div className="w-full">
 
-      <PieChart 
+      <Pie 
         id='chart-pie' 
         data={ecomPieChartData} 
         legend   
@@ -25,6 +25,7 @@ const Pie = () =>  (
           <SeriesDirective key={index} {...item} />
           )}
         </SeriesCollectionDirective>
+        <PieChart />
     </div>
   </div>
 )
