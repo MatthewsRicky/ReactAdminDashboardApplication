@@ -1,6 +1,6 @@
 import React from 'react'
 import { SeriesCollectionDirective, SeriesDirective, Inject, DataLabel, Legend, Category, Tooltip } from '@syncfusion/ej2-react-charts'
-import { FiPieChart } from 'react-icons/fi'
+
 
 
 
